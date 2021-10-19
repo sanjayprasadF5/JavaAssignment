@@ -1,6 +1,6 @@
 package stringAssignment;
 import java.util.*;
-public class StringOperations
+public class String3
 {
 	public static void main(String[] args) 
 	{
