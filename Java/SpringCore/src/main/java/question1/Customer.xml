@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans.xsd 
+http://www.springframework.org/schema/context 
+http://www.springframework.org/schema/context/spring-context.xsd" 
+xmlns:context="http://www.springframework.org/schema/context" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://www.springframework.org/schema/beans">
+
+<!--<bean id="customer" class="Spring.Assignment1.Customer">
+<property name="customerId" value="101"></property>
+<property name="customerName" value="Naveen"></property>
+<property name="customerContact" value="96185777">
+</property><property name="address" ref="address">
+</property></bean>-->
+
+
+
+<bean class="question1.Customer" id="Customer">
+		<constructor-arg value="100"/>
+		<constructor-arg value="TOM"/>
+		<constructor-arg value="1321312341"/>
+		<constructor-arg ref="Address"/>
+</bean>
+
+
+<bean class="question1.Address" id="Address">
+		<constructor-arg value="RURU"/>
+		<constructor-arg value="NewValue"/>
+		<constructor-arg value="Hidden Leaf"/>
+		<constructor-arg value="Ninja World"/>
+		<constructor-arg value="312313"/>
+
+</bean>
+
+</beans>

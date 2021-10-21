@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans">
+
+
+<bean class="question2.questions" id="questions">
+
+<property value="1" name="questionId"/>
+
+<property value="who are the last 3 CM's of Ap?" name="question"/>
+
+
+<property name="l">
+
+
+<list>
+
+<ref bean="l1"/>
+
+<ref bean="l2"/>
+
+<ref bean="l3"/>
+
+</list>
+
+</property>
+
+
+<property name="s">
+
+
+<set>
+
+<ref bean="s1"/>
+
+<ref bean="s2"/>
+
+<ref bean="s3"/>
+
+</set>
+
+</property>
+
+
+<property name="m">
+
+
+<map>
+
+<entry value="RajaMouli" key="1"/>
+
+<entry value="Steven Spielberg" key="2"/>
+
+<entry value="Martin Scorsese" key="3"/>
+
+<entry value="Alfred Hitchcock" key="4"/>
+
+</map>
+
+</property>
+
+</bean>
+
+
+<bean class="question2.ListAnswers" id="l1">
+
+<property value="Y.S.Jagan(2019-present)" name="listanswers"/>
+
+</bean>
+
+
+<bean class="question2.ListAnswers" id="l2">
+
+<property value="N.Chandra Babu Naidu(2014-2019)" name="listanswers"/>
+
+</bean>
+
+
+<bean class="question2.ListAnswers" id="l3">
+
+<property value="N.Kiran kumar Reddy(2010-2014)" name="listanswers"/>
+
+</bean>
+
+
+<bean class="question2.SetAnswers" id="s1">
+
+<property value="Y.S.Jagan(2019-prasent)" name="setanswers"/>
+
+</bean>
+
+
+<bean class="question2.SetAnswers" id="s2">
+
+<property value="N.Chandra Babu Naidu(2014-2019)" name="setanswers"/>
+
+</bean>
+
+
+<bean class="question2.SetAnswers" id="s3">
+
+<property value="N.Kiran kumar Reddy(2010-2014)" name="setanswers"/>
+
+</bean>
+
+</beans>
